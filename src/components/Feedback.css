@@ -1,0 +1,82 @@
+.feedback-container {
+  padding: 0 10px;
+}
+
+/* Styles pour la section photo */
+.photo-container {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.photo-container ion-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.photo-container ion-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  --border-radius: 50%;
+  --padding-start: 5px;
+  --padding-end: 5px;
+  --padding-top: 5px;
+  --padding-bottom: 5px;
+  margin: 0;
+}
+
+/* Styles pour la section signature */
+.signature-container {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.signature-pad-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+}
+
+.signature-pad {
+  touch-action: none;
+}
+
+.saved-signature {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.saved-signature ion-img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.saved-signature ion-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  --border-radius: 50%;
+  --padding-start: 5px;
+  --padding-end: 5px;
+  --padding-top: 5px;
+  --padding-bottom: 5px;
+  margin: 0;
+}
+
+/* Styles pour le bouton de soumission */
+.submit-feedback-button {
+  margin-top: 24px;
+  --background: #3b82f6;
+  --background-hover: #2563eb;
+  --background-activated: #1d4ed8;
+}

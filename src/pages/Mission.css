@@ -1,0 +1,143 @@
+/* Mission.css */
+
+/* Style général de la page */
+ion-content {
+  --background: #f8f9fa;
+  --padding-top: 16px;
+  --padding-bottom: 16px;
+}
+
+/* Header */
+ion-toolbar {
+  --background: linear-gradient(135deg, #3b82f6, #6366f1);
+  --color: white;
+}
+
+/* Liste des incidents */
+ion-list {
+  background: transparent;
+  padding: 0;
+}
+
+ion-item {
+  --background: white;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --inner-padding-end: 0;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+ion-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+ion-label h2 {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+ion-label p {
+  color: #7f8c8d;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+/* Boutons */
+ion-button {
+  --border-radius: 8px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: none;
+  margin: 8px 0;
+}
+
+/* Bouton Voir Détails */
+ion-button[color="primary"] {
+  --background: #3b82f6;
+  --background-hover: #2563eb;
+  --background-activated: #1d4ed8;
+}
+
+/* Modal */
+ion-modal {
+  --width: 90%;
+  --max-width: 500px;
+  --height: auto;
+  --border-radius: 16px;
+  --box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+ion-modal ion-toolbar {
+  --background: white;
+  --color: #2c3e50;
+}
+
+/* Boutons du modal */
+ion-button[color="success"] {
+  --background: #10b981;
+  --background-hover: #059669;
+  --background-activated: #047857;
+  margin-right: 8px;
+}
+
+ion-button[color="medium"] {
+  --background: #6b7280;
+  --background-hover: #4b5563;
+  --background-activated: #374151;
+}
+
+/* Icône favori */
+ion-icon {
+  transition: all 0.3s ease;
+}
+
+/* Spinner de chargement */
+ion-spinner {
+  width: 48px;
+  height: 48px;
+  --color: #3b82f6;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  ion-item {
+    --padding-start: 12px;
+    --padding-end: 12px;
+  }
+
+  ion-button {
+    font-size: 14px;
+  }
+}
+
+/* Style pour les missions acceptées */
+.accepted-mission {
+  --background: rgba(16, 185, 129, 0.05);
+  border-left: 4px solid #10b981;
+}
+
+.status-tag {
+  display: inline-flex;
+  align-items: center;
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.status-tag ion-icon {
+  margin-right: 4px;
+  font-size: 14px;
+}
